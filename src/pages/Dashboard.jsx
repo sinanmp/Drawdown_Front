@@ -18,7 +18,7 @@ export default function Dashboard() {
             try {
 
                 const res = await axios.get(
-                    "http://69.10.45.229:5000/dashboard"
+                    "https://drawdownapi.greenbonds.biz/dashboard"
                 );
 
                 setAccounts(res.data);

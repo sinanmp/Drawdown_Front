@@ -22,7 +22,7 @@ export default function AccountModal({
         setLoadingHistory(true);
   
         const res = await axios.get(
-          `http://69.10.45.229:5000/history/${account.account}`
+          `https://drawdownapi.greenbonds.biz/history/${account.account}`
         );
   
         setHistory(res.data);
