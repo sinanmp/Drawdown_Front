@@ -207,7 +207,7 @@ export default function AccountModal({
 
                   <Stat
                     title="Max Floating DD"
-                    value={`$${account.maxFloatingDD || 0}`}
+                    value={`$${account.maxFloatingDD.toFixed(2) || 0}`}
                     orange
                   />
 
