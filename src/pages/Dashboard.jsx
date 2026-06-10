@@ -70,7 +70,7 @@ export default function Dashboard() {
       "
         >
 
-            <div className="max-w-7xl mx-auto px-6 py-10">
+        <div className="max-w-md mx-auto px-4 py-4">
 
                 {/* HEADER */}
 
@@ -78,7 +78,7 @@ export default function Dashboard() {
 
                     <div>
 
-                        <h1 className="text-6xl font-black tracking-tight">
+                      <h1 className="text-2xl font-bold">
 
                             Drawdown Tracker
 
@@ -138,10 +138,7 @@ export default function Dashboard() {
                 <div
                     className="
           grid
-          grid-cols-1
-          md:grid-cols-2
-          xl:grid-cols-4
-
+     grid-cols-2
           gap-6
           mb-10
           "
@@ -152,15 +149,15 @@ export default function Dashboard() {
                         value={accounts.length}
                     />
 
-                    <SummaryCard
-                        title="Total Equity"
-                        value={`$${totalEquity.toLocaleString()}`}
-                    />
+<SummaryCard
+  title="Equity"
+  value={`$${totalEquity.toLocaleString()}`}
+/>
 
-                    <SummaryCard
-                        title="Worst Floating DD"
-                        value={`$${worstFloatingDD.toFixed(2)}`}
-                    />
+<SummaryCard
+  title="Float DD"
+  value={`$${worstFloatingDD.toFixed(0)}`}
+/>
 
                     <SummaryCard
                         title="Worst Daily DD"

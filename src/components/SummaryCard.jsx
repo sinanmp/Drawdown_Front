@@ -5,29 +5,28 @@ export default function SummaryCard({
   return (
     <div
       className="
-      relative overflow-hidden
-      bg-slate-900/80
-      backdrop-blur-xl
+      bg-slate-900
       border border-slate-800
-      rounded-3xl
-      p-6
-      shadow-xl
-      hover:border-cyan-500/40
-      hover:-translate-y-1
-      transition-all duration-300
+      rounded-2xl
+      p-4
       "
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-transparent" />
+      <p className="text-slate-500 text-xs uppercase">
+        {title}
+      </p>
 
-      <div className="relative">
-        <p className="text-slate-400 uppercase tracking-wider text-xs">
-          {title}
-        </p>
-
-        <h2 className="text-4xl font-black text-white mt-3">
-          {value}
-        </h2>
-      </div>
+      <h2
+        className="
+        text-lg
+        sm:text-xl
+        font-bold
+        text-white
+        mt-1
+        truncate
+        "
+      >
+        {value}
+      </h2>
     </div>
   );
 }
